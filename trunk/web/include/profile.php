@@ -21,6 +21,7 @@ header("Pragma: no-cache");
 	}
 	$profile="";
 		if (isset($_SESSION['user_id'])){
+				
 				$sid=$_SESSION['user_id'];
 				$profile.= "<li><i class=icon-user></i><a href=./modifypage.php>$MSG_USERINFO</a></li><li><a href='./userinfo.php?user=$sid'><span id=red>$sid</span></a></li>";
 				$mail=checkmail();
@@ -39,13 +40,15 @@ header("Pragma: no-cache");
                 if ($OJ_QQ_AUTH){
             $profile.= "<a href=./login_qq.php>$MSG_LOGIN(QQ)</a>&nbsp;";
                 }
-				$profile.= "<li><a href=./loginpage.php>$MSG_LOGIN</a></li>";
+				$profile.= "<div class='kopa-login'><a href=./loginpage.php><i class='fa fa-sign-in'></i>$MSG_LOGIN</a></div>";				
+				//$profile.= "<li><a href=./loginpage.php>$MSG_LOGIN</a></li>";
 				if($OJ_LOGIN_MOD=="hustoj"){
-					$profile.= "<li><a href=./registerpage.php>$MSG_REGISTER</a></li>";
+					$profile.= "<div class='kopa-register'><a href=./registerpage.php><i class='fa fa-unlock'></i>$MSG_REGISTER</a></div>";
+					//$profile.= "<li><a href=./registerpage.php>$MSG_REGISTER</a></li>";
 				}
 			}
 			if (isset($_SESSION['administrator'])||isset($_SESSION['contest_creator'])||isset($_SESSION['problem_editor'])){
-           $profile.= "<li><a href=./admin/>$MSG_ADMIN</a></li>";
+           		$profile.= "<li><a href=./admin/>$MSG_ADMIN</a></li>";
 			
 			}
 		?>
