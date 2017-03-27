@@ -41,10 +41,10 @@ header("Pragma: no-cache");
             $profile.= "<a href=./login_qq.php>$MSG_LOGIN(QQ)</a>&nbsp;";
                 }
 				$profile.= "<div class='kopa-login'><a href=./loginpage.php><i class='fa fa-sign-in'></i>$MSG_LOGIN</a></div>";				
-				//$profile.= "<li><a href=./loginpage.php>$MSG_LOGIN</a></li>";
+				
 				if($OJ_LOGIN_MOD=="hustoj"){
 					$profile.= "<div class='kopa-register'><a href=./registerpage.php><i class='fa fa-unlock'></i>$MSG_REGISTER</a></div>";
-					//$profile.= "<li><a href=./registerpage.php>$MSG_REGISTER</a></li>";
+				
 				}
 			}
 			if (isset($_SESSION['administrator'])||isset($_SESSION['contest_creator'])||isset($_SESSION['problem_editor'])){

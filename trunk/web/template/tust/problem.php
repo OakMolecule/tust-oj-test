@@ -14,7 +14,7 @@
     <!-- Custom styles for this template -->
     <link href="theme.css" rel="stylesheet">
  
-     <link rel="next" href="submitpage.php?<?php
+    <link rel="next" href="submitpage.php?<?php
 
         if ($pr_flag){
 		echo "id=$id";
