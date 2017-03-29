@@ -29,8 +29,8 @@ $(function () {
     var d3 = [[0, 12], [7, 12], null, [7, 2.5], [12, 2.5]];
 
   $.plot($("#submission"), [
-   {label:"<?php echo $MSG_SUBMIT?>",data:d1,lines: { show: true }},
-    {label:"<?php echo $MSG_AC?>",data:d2,bars:{show:true}} ],{
+    {label:"<?php echo $MSG_SUBMIT?>",data:d1,lines: { show: true }},
+    {label:"<?php echo $MSG_AC?>",data:d2,bars: { show: true }} ],{
    grid: {
 backgroundColor: { colors: ["#fff", "#eee"] }
 },
@@ -84,7 +84,7 @@ body {
 	<?php require_once("oj-header.php");?>
 <div id=main>
 	<center>
-	<div id=submission style="width:70%;height:350px" class="img-thumbnail" ></div>
+	  <div id=submission style="width:70%;height:350px" class="img-thumbnail" ></div>
 	</center>
 <!--	<?php echo $view_news?> -->
 <div id=foot>

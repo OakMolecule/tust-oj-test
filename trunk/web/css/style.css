@@ -1284,6 +1284,9 @@ ul.list-has-style li:before {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+.kopa-header-01 .top-header a:hover{
+  color: #fff;
+}
 
 .kopa-header-02 {
   position: relative;
@@ -2242,13 +2245,17 @@ ul.list-has-style li:before {
   color: #fff;
   text-align: right;
 }
+.kopa-widget-slider .module-slider-01 .content .small{
 
+  font-size: 30px;
+}
 .kopa-widget-slider .module-slider-01 .content h2 {
   font-size: 45px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin: 0 0 25px;
+  display:inline;
 }
 
 .kopa-widget-slider .module-slider-01 .content p {

@@ -31,10 +31,10 @@
 
     <div class="form-group">
       <div class="col-sm-offset-2 col-sm-10">
-        <button type="submit" class="btn btn-default" name="submit">Sign in</button>
+        <button type="submit" class="btn btn-default" name="submit"><?php echo $MSG_LOGIN?></button>
     </div>
   </div>
-<a href="lostpassword.php">Lost Password</a>
+<a href="lostpassword.php"><?php echo $MSG_LOST_PASSWORD?></a>
 
         <!-- <tr><td width=240><?php echo $MSG_USER_ID?>:<td width=200><input style="height:24px" name="user_id" type="text" size=20></tr> -->
         <!-- <tr><td><?php echo $MSG_PASSWORD?>:<td><input name="password" type="password" size=20 style="height:24px"></tr> -->

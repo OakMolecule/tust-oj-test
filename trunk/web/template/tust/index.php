@@ -1,5 +1,6 @@
 ﻿<html>
   <head>
+    <link rel="shortcut icon" href="favicon.png" >
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>TUST Online Judge </title>
     
@@ -18,6 +19,7 @@
     <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="include/jquery.min.js"  ></script>
     
     <!-- View Responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -118,9 +120,9 @@
           <div class="widget kopa-widget-slider">
             <div class="widget-content module-slider-01">
               <div class="container">
-                <img src="images/main-slider/1.png" alt="">
+                <img src="images/main-slider/1.png" alt="">s
                 <div class="content">
-                  <h2>天津科技大学Online Judge</h2>
+                  <h2>天津科技大学</h2><h2 class="small">Online Judge</h2>
                   <p>Education is learning what you didn't even know you didn't know.</p>
                   <a href="#" class="button-01">Start A Course</a>
                   <a href="#" class="button-01">Learn More</a>

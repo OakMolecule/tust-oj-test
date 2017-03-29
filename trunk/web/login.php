@@ -29,6 +29,7 @@
 		echo "<script language='javascript'>\n";
 		echo "history.go(-2);\n";
 		echo "</script>";
+		
 	}else{
 		
 		echo "<script language='javascript'>\n";
