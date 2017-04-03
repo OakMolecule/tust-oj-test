@@ -27,7 +27,7 @@ header("Pragma: no-cache");
 				$mail=checkmail();
 				if ($mail)
 					$profile.= "&nbsp;<i class=icon-envelope></i><a href=./mail.php>$mail</a>";
-        $profile.="&nbsp;<div><a href='./status.php?user_id=$sid'><span id=red>Recent</span></a></div>";
+        $profile.="&nbsp;<div><a href='./status.php?user_id=$sid'><span id=red>近期浏览</span></a></div>";
                                 
 				$profile.= "&nbsp;<div><a href='./logout.php' target='_top' >$MSG_LOGOUT</a></div>";
 				

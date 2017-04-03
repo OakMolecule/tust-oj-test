@@ -4,7 +4,9 @@
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Roboto+Slab:300,400,700" rel="stylesheet">
     <!-- Css Plugin -->
+    <!--
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/themify-icons.css">
     <link rel="stylesheet" href="css/owl.carousel.css">

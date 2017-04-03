@@ -7,8 +7,6 @@
     <?php echo $view_title?>
   </title>
   <link rel=stylesheet href='./template/<?php echo $OJ_TEMPLATE?>/<?php echo isset($OJ_CSS)?$OJ_CSS:"hoj.css" ?>' type='text/css'>
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  
   <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
   <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
    crossorigin="anonymous">
@@ -20,15 +18,6 @@
   <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
   <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
    crossorigin="anonymous"></script>
-
-   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.css">
-
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.js"></script>
-
-  <!-- Latest compiled and minified Locales -->
-  <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/locale/bootstrap-table-zh-CN.min.js"></script>
 
   <!--
 <link rel=stylesheet href='bootstrap/css/bootstrap.css' type='text/css'>
@@ -49,11 +38,11 @@
         $(document).ready(function () {
           $("#problemset").tablesorter();
         }
-      );
+        );
 
       </script>
 
-     <!-- <h3 align='center'>
+      <h3 align='center'>
         <?php
           for ($i=1;$i<=$view_total_page;$i++){
             if ($i>1) echo '&nbsp;';
@@ -61,54 +50,38 @@
             else echo "<a href='problemset.php?page=".$i."'>".$i."</a>";
           }
         ?>
-      </h3>-->
+
+      </h3>
       
       <center>
-        <!--<table>
-          <tr align='center'>
+        <table>
+          <tr align='center' class='evenrow'>
             <td width='5'></td>
             <td width='50%' colspan='1'>
               <form class=form-search action=problem.php>
                 Problem ID<input class="input-small search-query" type='text' name='id' size=5 style="height:24px">
                 <button class="btn btn-mini" type='submit'>Go</button></form>
             </td>
-            <td width='20%'>
-              <form>
-                <div class="form-group">
-                  <div class="col-sm-4">
-                    <input type="search" class="form-control" name=search placeholder="<?php echo $MSG_SEARCH?>">
-                    <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
-                  </div>
-                </div>
-              </form>-->
-              <!--<form class="form-search">
-                <input style="height:24px" type="search" name=search class="input-large search-query">
+            <td width='50%' colspan='1'>
+              <form class="form-search">
+                <input style="height:24px" type="text" name=search class="input-large search-query">
                 <button type="submit" class="btn btn-mini"><?php echo $MSG_SEARCH?></button>
               </form>
             </td>
           </tr>
-        </table>-->
+        </table>
 
-        <form>
-          <div class="form-group">
-            <div class="col-sm-2">
-              <input type="search" class="form-control" name=search placeholder="<?php echo $MSG_SEARCH?>">
-              <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
-            </div>
-          </div>
-        </form>
-
-        <table class="table table-striped">
+        <table id='problemset' width='90%' class='table table-striped'>
           <thead>
-            <tr>
+            <tr class='toprow'>
               <th width='5'></th>
               <th width='120'>
-                  <center><?php echo $MSG_PROBLEM_ID?></center>
+                <A>
+                  <?php echo $MSG_PROBLEM_ID?>
+                </A>
               </th>
               <th>
-                <center>
-                  <?php echo $MSG_TITLE?>
-                </center>
+                <?php echo $MSG_TITLE?>
               </th>
               <th width='10%'>
                 <?php echo $MSG_SOURCE?>
@@ -122,14 +95,18 @@
             </tr>
           </thead>
 
+
           <tbody>
             <?php
               $cnt=0;
               foreach($view_problemset as $row){
-                echo "<tr>";
+                if ($cnt)
+                echo "<tr class='oddrow'>";
+                else
+                echo "<tr class='evenrow'>";
                 foreach($row as $table_cell){
                   echo "<td>";
-                  echo $table_cell;
+                  echo "\t".$table_cell;
                   echo "</td>";
                 }
                 echo "</tr>";

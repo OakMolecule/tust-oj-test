@@ -140,7 +140,6 @@
 			
 			$cnt=0;
 			while ($row=mysqli_fetch_object($result)){
-				
 				$view_problemset[$cnt][0]="";
 				if (isset($_SESSION['user_id'])) 
 					$view_problemset[$cnt][0]=check_ac($cid,$cnt);
