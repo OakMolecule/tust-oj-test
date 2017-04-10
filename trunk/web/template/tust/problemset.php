@@ -30,12 +30,6 @@
   <!-- Latest compiled and minified Locales -->
   <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/locale/bootstrap-table-zh-CN.min.js"></script>
 
-  <!--
-<link rel=stylesheet href='bootstrap/css/bootstrap.css' type='text/css'>
-<script language="javascript" type="text/javascript" src="include/jquery-latest.js"></script>
-<script language="javascript" type="text/javascript" src="include/jquery.flot.js"></script>
-<script language="javascript" type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
--->
 </head>
 
 <body>
@@ -64,31 +58,6 @@
       </h3>-->
       
       <center>
-        <!--<table>
-          <tr align='center'>
-            <td width='5'></td>
-            <td width='50%' colspan='1'>
-              <form class=form-search action=problem.php>
-                Problem ID<input class="input-small search-query" type='text' name='id' size=5 style="height:24px">
-                <button class="btn btn-mini" type='submit'>Go</button></form>
-            </td>
-            <td width='20%'>
-              <form>
-                <div class="form-group">
-                  <div class="col-sm-4">
-                    <input type="search" class="form-control" name=search placeholder="<?php echo $MSG_SEARCH?>">
-                    <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
-                  </div>
-                </div>
-              </form>-->
-              <!--<form class="form-search">
-                <input style="height:24px" type="search" name=search class="input-large search-query">
-                <button type="submit" class="btn btn-mini"><?php echo $MSG_SEARCH?></button>
-              </form>
-            </td>
-          </tr>
-        </table>-->
-
         <form>
           <div class="form-group">
             <div class="col-sm-2">

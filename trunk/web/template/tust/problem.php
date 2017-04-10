@@ -15,15 +15,14 @@
     <link href="theme.css" rel="stylesheet">
  
     <link rel="next" href="submitpage.php?<?php
-
-        if ($pr_flag){
-		echo "id=$id";
-	}else{
-		echo "cid=$cid&pid=$pid&langmask=$langmask";
-	}
-
-        ?>">
+      if ($pr_flag){
+        echo "id=$id";
+      }else{
+        echo "cid=$cid&pid=$pid&langmask=$langmask";
+      }
+    ?>">
 </head>
+
 <body>
 <div id="wrapper">
 	<?php
@@ -31,7 +30,6 @@
 		require_once("oj-header.php");
 	else
 		require_once("contest-header.php");
-
 	?>
 <div id=main>
 

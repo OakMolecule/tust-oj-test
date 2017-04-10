@@ -15,12 +15,12 @@ h2 {
     /*position: relative;*/
     /*left: 2.5%;*/
 }
-
+/*
 nav {
     width: 100%;
     position: relative;
 }
-
+*/
 input{
    height:24px;
 }
@@ -183,17 +183,16 @@ div.content {
     width: 100%;
     z-index: 4;
 }
+/**
 #main {
     width: 95%;
     position: relative;
     left: 2.5%;
 
 }
+*/
 
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
   line-height: 60px; /* Vertically center the text there */
